@@ -1,0 +1,43 @@
+#log{
+    margin: 0; 
+    float: right; 
+    position: relative;
+    background-color:#8B0000;
+    color: white;
+    width: 10%;
+    right: -0.2%;
+    padding-right: 10px;
+    padding-left: 10px;
+    transition: all 0.7s ease-in-out 0s;
+    -webkit-transition: all 0.7s ease-in-out 0s;
+    -o-transition: all 0.7s ease-in-out 0s;
+    -moz-transition: all 0.7s ease-in-out 0s;
+}
+
+#log .mostrar{
+    position: absolute;
+    left: 80%;
+    top: 0px;
+    display: none;
+    transition: all 0.7s ease-in-out 0.4s;
+    -webkit-transition: all 0.7s ease-in-out 0.4s;
+    -o-transition: all 0.7s ease-in-out 0.4s;
+    -moz-transition: all 0.7s ease-in-out 0.4s;
+}
+
+.limpiar{
+    clear: both;
+}
+
+#log:hover{
+    right: 0;
+    width: 20%;
+}
+
+#log:hover .mostrar{
+    display: block;
+}
+
+.mostrar a{
+    color: white;
+}

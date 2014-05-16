@@ -3,10 +3,8 @@
 <head>
 	<title>Em's Resorts</title>
 	<meta author="Emanuelle Portillo Torres"/>
-	<meta description="Catalogo de Videojuegos"/>
+	<meta description="Em's Resort"/>
 	<meta charset="UTF-8"/>
-	<link rel="stylesheet" type="text/css" href="navegador.css">
-	<link rel="stylesheet" href="principal.css">
-	<link rel="stylesheet" type="text/css" href="layoutPrincipal.css">
+	<link rel="stylesheet" href="login.css">
 </head>
 <?php include('conexion.php') ?>

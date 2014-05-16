@@ -1,12 +1,14 @@
-<form>
-    <fieldset class="login" style="margin: 0; float: right; position: relative;">
-		<legend>Login</legend>
-		<label for="Usuario">Usuario:</label>
-		<input id="Usuario" type="text"/><br/>
-		<label for="Password">Password:</label>
-		<input id="Password" type="password"/>
-		<br/>
-		<button><a href="index.html">Login</a></button>
-		<button><a href="index.html">Cancel</a></button>
-	</fieldset>
-</form>
+<div class="mensaje">Login</div><div class="mostrar">
+    <form action="entrar.php" method="POST">
+        <fieldset class="login">
+		    <legend>Login</legend>
+		    <label for="Usuario">Usuario:</label>
+		    <input name="usuario" id="Usuario" type="text"/><br/>
+		    <label for="Password">Password:</label>
+		    <input name="pass" id="Password" type="password"/>
+		    <br/>
+	    	<input type="submit" value="Login"/>
+            <a href="registrarse.php">registrarse</a>
+	    </fieldset>
+    </form>
+</div>

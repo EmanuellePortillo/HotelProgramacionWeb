@@ -18,11 +18,11 @@
     position: absolute;
     left: 80%;
     top: 0px;
-    display: none;
-    transition: all 0.7s ease-in-out 0.4s;
-    -webkit-transition: all 0.7s ease-in-out 0.4s;
-    -o-transition: all 0.7s ease-in-out 0.4s;
-    -moz-transition: all 0.7s ease-in-out 0.4s;
+    opacity: 0;
+    transition: all 0.7s ease-in-out 0;
+    -webkit-transition: all 0.7s ease-in-out 0;
+    -o-transition: all 0.7s ease-in-out 0;
+    -moz-transition: all 0.7s ease-in-out 0;
 }
 
 .limpiar{
@@ -35,7 +35,13 @@
 }
 
 #log:hover .mostrar{
-    display: block;
+    opacity: 1;
+}
+
+#log:hover>.mostrar.form{
+    left: 25%;
+    background-color: #8D0000;
+    padding: 5px;
 }
 
 .mostrar a{

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-ar">
+<head>
+<meta charset="utf-8" />
+<title>XHtml5</title>
+<style type="text/css">
+div#fondo{
+width: 460px;
+height: 358px;
+background-image: url(poster.jpg);
+}
+div#contenido{
+position: relative;
+top: 0px:
+left: 0px;
+background-color: #000;
+opacity: 0;
+-moz-opacity: 0;
+width: 460px;
+height: 358px;
+vertical-align: middle;
+text-align: center;
+display: table-cell;
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+}
+ 
+div#contenido:hover{
+opacity: 0.8;
+-moz-opacity: 0.8;
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
+}
+    
+div#det {
+position:relative;
+opacity: 1;
+-moz-opacity: 1;
+-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=100);
+color: red;
+font-family: arial, sans-serif;
+font-size: 13pt;
+visibility: hidden;
+vertical-align: middle;
+}
+</style>
+<!--[if IE 7]>
+<style type="text/css">
+div#det{
+margin-top: 160px;
+}
+</style>
+<![endif]-->
+ 
+<script type="text/javascript" src="jquery-1.6.1.min.js"></script>
+</head>
+<body>
+<div id="fondo">
+<div id="contenido"><div id='det'>detalles de la foto<br />detalles de la foto<br /><br />
+<a href='detalles.html'>ver más</a></div></div>
+</div>
+<script type="text/javascript">
+$("#contenido").mouseover(function () {
+$("#det").css('visibility','visible');
+$("#det").css('z-index','999');
+$("#contenido").css('z-index','1');
+});
+$("#det").mouseout(function () {
+$("#det").css('visibility','hidden');
+});
+</script>
+</body>
+</html>

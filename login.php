@@ -2,14 +2,13 @@
 <div class="mostrar form">
     <form action="entrar.php" method="POST">
         <fieldset class="login">
-		    <div style="width: 50%;">
+            <div class="elements">
 		        <label for="Usuario">Usuario:</label>
 		        <input name="usuario" id="Usuario" type="text"/>
-            </div>
-            <div style="width: 50%;">
 		        <label for="Password">Password:</label>
 		        <input name="pass" id="Password" type="password"/>
-		    </div>
+            </div>
+            <div style="clear: both;"></div>
 	    	<input type="submit" value="Login"/>
             <a href="registrarse.php">registrarse</a>
 	    </fieldset>
